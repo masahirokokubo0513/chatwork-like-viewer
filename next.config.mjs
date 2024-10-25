@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // GitHub Pagesのリポジトリ名を設定
-  basePath: '/chatwork-like-viewer',
-  // アセットプレフィックスを設定
-  assetPrefix: '/chatwork-like-viewer/',
+  basePath: process.env.NODE_ENV === 'production' ? '/chatwork-like-viewer' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/chatwork-like-viewer/' : '',
 };
 
 export default nextConfig;
