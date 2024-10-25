@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "git": "git add . && git commit && git push origin main",
-    "deploy": "gh-pages-clean && npm run build && gh-pages -d build"
+    "deploy": "gh-pages-clean && npm run build && npm run git"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.1",
